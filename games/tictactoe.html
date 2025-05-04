@@ -4,10 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tic Tac Toe</title>
-  <!-- Link to the CSS -->
   <link rel="stylesheet" href="tictactoe.css">
 </head>
 <body>
+  <div id="play-mode-selection">
+    <button id="random-play">Play with Bot</button>
+    <button id="two-player">Two Player Game</button>
+    <button id="invite-player">Invite a Friend</button>
+  </div>
+
   <div id="status">Player 1's turn (X)</div>
   <div id="board">
     <div data-cell="0"></div>
@@ -23,16 +28,10 @@
 
   <button id="reset">Restart Game</button>
 
-  <!-- Firebase SDK -->
   <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
   <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
-
-  <!-- Link to the Firebase Configuration file -->
   <script src="firebase.js"></script>
-
-  <!-- Link to the Game Logic (JS) -->
   <script src="tictactoe.js"></script>
 </body>
 </html>
-
