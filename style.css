@@ -1,0 +1,19 @@
+
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background: #f0f0f0;
+}
+#game-list {
+  margin-top: 40px;
+}
+#game-list a {
+  display: block;
+  margin: 10px auto;
+  padding: 12px 24px;
+  width: 200px;
+  background: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+}
