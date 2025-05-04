@@ -1,18 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tic Tac Toe</title>
-  <link rel="stylesheet" href="tictactoe.css" />
-  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
-  <script src="../firebase.js"></script>
+  <!-- Link to the CSS -->
+  <link rel="stylesheet" href="tictactoe.css">
 </head>
 <body>
-  <h1>Multiplayer Tic Tac Toe</h1>
-  <div id="board"></div>
-  <p id="status"></p>
+  <div id="status">Player 1's turn (X)</div>
+  <div id="board">
+    <div data-cell="0"></div>
+    <div data-cell="1"></div>
+    <div data-cell="2"></div>
+    <div data-cell="3"></div>
+    <div data-cell="4"></div>
+    <div data-cell="5"></div>
+    <div data-cell="6"></div>
+    <div data-cell="7"></div>
+    <div data-cell="8"></div>
+  </div>
+
+  <button id="reset">Restart Game</button>
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+
+  <!-- Link to the Firebase Configuration file -->
+  <script src="firebase.js"></script>
+
+  <!-- Link to the Game Logic (JS) -->
   <script src="tictactoe.js"></script>
 </body>
 </html>
+
